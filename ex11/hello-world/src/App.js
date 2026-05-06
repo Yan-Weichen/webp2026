@@ -1,8 +1,8 @@
 import './App.css';
 import IconButton from '@mui/material/IconButton';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import DeleteIcon from '@mui/icons-material/Delete';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AlarmIcon from '@mui/icons-material/Alarm';
 
 const styleArgument = { fontSize: '100px', color: 'red' };
 
@@ -16,9 +16,9 @@ function App() {
     <div className="App">
       <h1 style={styleArgument} onClick={changeText}> hello CGU!! </h1>
       <div>
-        <IconButton><ShoppingCartIcon /></IconButton>
-        <IconButton><DeleteIcon /></IconButton>
-        <IconButton><AccessTimeIcon /></IconButton>
+        <IconButton color="primary" aria-label="add to shopping cart"><AddShoppingCartIcon /></IconButton>
+        <IconButton color="primary" aria-label="delete"><DeleteIcon /></IconButton>
+        <IconButton color="primary" aria-label="add an alarm"><AlarmIcon /></IconButton>
       </div>
     </div>
   );
