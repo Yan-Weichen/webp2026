@@ -16,12 +16,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="#">
-        CGU Web Programming
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      {'Copyright © I_LOVE_CSIE@CGU 2026.'}
     </Typography>
   );
 }
@@ -48,14 +43,10 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage:
-              'url(https://source.unsplash.com/random?wallpapers)',
+            backgroundImage: 'url(/CGU_Logo.png)',
             backgroundRepeat: 'no-repeat',
-            backgroundColor: (t) =>
-              t.palette.mode === 'light'
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
-            backgroundSize: 'cover',
+            backgroundColor: '#ffffff',
+            backgroundSize: 'contain',
             backgroundPosition: 'center',
           }}
         />
@@ -69,11 +60,11 @@ export default function SignInSide() {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            <Avatar sx={{ m: 1, bgcolor: 'error.main' }}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Sign in CSIE@CGU
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
@@ -106,7 +97,7 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                SIGN IN
               </Button>
               <Grid container>
                 <Grid item xs>
