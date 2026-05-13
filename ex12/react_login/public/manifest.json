@@ -1,0 +1,9 @@
+{
+  "short_name": "React Login",
+  "name": "React Login App",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
